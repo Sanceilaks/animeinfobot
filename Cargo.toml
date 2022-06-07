@@ -1,0 +1,15 @@
+[package]
+name = "voidanimebot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serenity = {version = "*", default-features = false,  features = ["client", "gateway", "rustls_backend", "model"]}
+serde_json = "*"
+tokio = {version = "*", features = ["rt", "rt-multi-thread", "macros"]}
+tracing = "*"
+tracing-subscriber = "*"
+serde = "*"
+reqwest = "*"
+urlencoding = "*"
+html2md = "*"
